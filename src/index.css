@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+}
+button{
+  cursor: pointer;
+}
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+.Container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8FAFC;
+  gap: 32px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  height: 455px;
+  width: 385px;
+  border-radius: 5px;
+}
+.essencial{
+  border: 1px solid #E2E8F0;
+  background-color: #fff;
+  
+}
+.essencial:hover{
+  border-color: #996DFF;
+}
+.content{
+  margin-top: 48px;
+  height: 295px;
+  width: 320px;
+}
+
+.title{
+  color: #7C3AED;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pacote{
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pacote-nome{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.price{
+  display: flex;
+  align-items: flex-end;
+}
+
+.price span{
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.price h1{
+  font-size: 24px;
+  font-weight: bold;
+
+}
+.price h2{
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.assinar-btn{
+  margin-top: 32px;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #1E293B;
+  border-radius: 4px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.assinar-btn:hover{
+  color: #fff;
+  background-color: #1E293B;
+}
+
+.division{
+  margin: 35px 0px;
+  height: 1px;
+  width: 100%;
+  background-color: #E2E8F0;
+}
+
+.content-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.foot{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.foot-title .essencial-beneficios{
+  max-width: 292px;
+  font-size: 16px;
+  color: #475569;
+}
+
+.ultimate-color{
+  color: #F8FAFC;
+}
+.ultimate-title{
+  color: #996DFF;
+}
+.ultimate{
+  background-color: #0F172A;
+  
+}
+
+.ultimate-btn{
+  border: none;
+  background-color: #996DFF;
+  color: #fff;
+}
+
+.ultimate-btn:hover{
+  background-color: #7C3AED;
+}
+
+.ultimate-division{
+  background-color: #334155;
+}
+
+.foot-title .ultimate-beneficio{
+  font-size: 16px;
+  color: #CBD5E1;
+}
+
+@media (max-width:1260px) {
+  .Container{
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 0px;
+
+  }
+}
+
+@media (max-width:435px) {
+  .card{
+    width: 90%;
+  }
+  .content{
+    width: 100%;
+    padding: 0px 15px;
+  }
+}
